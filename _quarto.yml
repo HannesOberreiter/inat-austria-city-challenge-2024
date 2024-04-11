@@ -1,0 +1,67 @@
+project:
+  type: website
+  resources:
+    - fonts/*
+  render: [index.qmd, page_*.qmd, "!page_demo.qmd"]
+
+website:
+  title: "CNC Austria 2024"
+  search: false
+  description: "Auswertungen und Analyse für die iNaturalist City Nature Challenge in Österreich."
+  repo-url: "https://github.com/HannesOberreiter/inat-austria-city-challenge-2024"
+  repo-actions: "edit"
+
+  navbar:
+    right:
+      - icon: person-lines-fill
+        text: ""
+        file: page_about.qmd
+      - icon: github
+        href: "https://github.com/HannesOberreiter/inat-austria-city-challenge-2024"
+    left:
+      - file: index.qmd
+        text: "Übersicht"
+      - text: "Regionen"
+        menu:
+          - file: page_graz.qmd
+            text: "Graz"
+          - file: page_amstetten.qmd
+            text: "Amstetten"
+          - file: page_industrieviertel.qmd
+            text: "Industrieviertel"
+          - file: page_innsbruck.qmd
+            text: "Innsbruck"
+          - file: page_klagenfurt.qmd
+            text: "Klagenfurt"
+          - file: page_krems-wachau-melk.qmd
+            text: "Krems-Wachau-Melk"
+          - file: page_wien.qmd
+            text: "Wien"
+          - file: page_st-poelten.qmd
+            text: "St.Pölten"
+          - file: page_vorarlberg.qmd
+            text: "Vorarlberg"
+          - file: page_elsbeere.qmd
+            text: "Elsbeere Wienerwald"
+      - text: "Nationalparks"
+        menu:
+          - file: page_nationalpark_gesaeuse.qmd
+            text: "Gesäuse"
+          - file: page_nationalpark_neusiedlersee-seewinkel.qmd
+            text: "Neusiedler See - Seewinkel"
+      - text: "Analysen"
+        menu:
+          - file: page_primeval_forest_relict_beetle.qmd
+            text: "Urwaltreliktkäfer"
+format:
+  html:
+    code-fold: true
+    embed-resources: false
+    include-in-header:
+      - file: assets/customMetaTags.html
+    link-external-icon: false
+    theme:
+      light: [flatly, assets/fonts.scss]
+      dark: [darkly, assets/fonts.scss]
+    css: assets/styles.css
+    toc: true
