@@ -1,0 +1,25 @@
+---
+title: "City Nature Challenge 2024: Innsbruck"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 4
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-innsbruck](https://www.inaturalist.org/projects/city-nature-challenge-2024-innsbruck)
+
+{{< include _init.qmd >}}
+
+```{r init}
+#| include: false
+#| cache: false
+projectId <- c("Innsbruck" = "192644")
+obsResults <- loadObs(projectId)
+```
+
+{{< include _body.qmd >}}
+

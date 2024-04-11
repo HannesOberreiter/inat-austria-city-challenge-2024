@@ -1,0 +1,26 @@
+---
+title: "City Nature Challenge 2024: Vorarlberg"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 5
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-vorarlberg](https://www.inaturalist.org/projects/city-nature-challenge-2024-vorarlberg)
+
+{{< include _init.qmd >}}
+
+
+```{r init}
+#| include: false
+#| cache: false
+projectId <- c("Vorarlberg" = "182916")
+obsResults <- loadObs(projectId)
+```
+
+{{< include _body.qmd >}}
+

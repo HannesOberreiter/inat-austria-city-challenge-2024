@@ -1,0 +1,25 @@
+---
+title: "City Nature Challenge 2024: Graz bis Naturpark Südsteiermark"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 1
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-graz-bis-naturpark-suedsteiermark](https://www.inaturalist.org/projects/city-nature-challenge-2024-graz-bis-naturpark-suedsteiermark)
+
+{{< include _init.qmd >}}
+
+```{r init}
+#| include: false
+#! cache: false
+projectId <- c("Graz" = "167156")
+obsResults <- loadObs(projectId)
+```
+
+{{< include _body.qmd >}}
+

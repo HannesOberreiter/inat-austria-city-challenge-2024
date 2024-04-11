@@ -1,0 +1,26 @@
+---
+title: "City Nature Challenge 2024: Elsbeere Wienerwald"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 10
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-elsbeere-wienerwald](https://www.inaturalist.org/projects/city-nature-challenge-2024-elsbeere-wienerwald)
+
+{{< include _init.qmd >}}
+
+
+```{r init}
+#| include: false
+#| cache: false
+projectId <- c("Elsbeere" = "187878")
+obsResults <- loadObs(projectId)
+```
+
+{{< include _body.qmd >}}
+

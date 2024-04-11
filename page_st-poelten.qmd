@@ -1,0 +1,26 @@
+---
+title: "City Nature Challenge 2024: St. Pölten"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 5
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-st-poelten](https://www.inaturalist.org/projects/city-nature-challenge-2024-st-poelten)
+
+{{< include _init.qmd >}}
+
+
+```{r init}
+#| include: false
+#| cache: false
+projectId <- c("St.Pölten" = "189214")
+obsResults <- loadObs(projectId)
+```
+
+{{< include _body.qmd >}}
+

@@ -56,3 +56,6 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# HTML in root folder
+*.html
+

@@ -1,0 +1,25 @@
+---
+title: "City Nature Challenge 2024: Neusiedler See/Seewinkel"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 8
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-neusiedler-see-seewinkel](https://www.inaturalist.org/projects/city-nature-challenge-2024-neusiedler-see-seewinkel)
+
+{{< include _init.qmd >}}
+
+```{r init}
+#| include: false
+#| cache: false
+projectIds <- c("Neusiedlersee" = "188907")
+obsResults <- loadObs(projectIds)
+```
+
+{{< include _body.qmd >}}
+

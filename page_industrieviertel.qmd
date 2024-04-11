@@ -1,0 +1,27 @@
+---
+title: "City Nature Challenge 2024: Industrieviertel"
+lang: 'de-AT'
+execute:
+  waring: false
+  error: false
+  echo: false
+order: 3
+date: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+---
+
+- [inaturalist.org/projects/city-nature-challenge-2024-industrieviertel](https://www.inaturalist.org/projects/city-nature-challenge-2024-industrieviertel)
+
+{{< include _init.qmd >}}
+
+
+```{r init}
+#| include: false
+#| cache: false
+projectId <- c("Industrieviertel" = "188910")
+obsResults <- loadObs(projectId)
+
+```
+
+{{< include _body.qmd >}}
+
