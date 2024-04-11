@@ -1,5 +1,5 @@
 ---
-title: "City Nature Challenges in Österreich, 28. April – 1. Mai 2024"
+title: "City Nature Challenges in Österreich, 26.-29. April 2024"
 lang: 'de-AT'
 execute:
   waring: false
