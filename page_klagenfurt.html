@@ -52,6 +52,27 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="site_libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet">
+<link href="site_libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet">
+<script src="site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.32/datatables.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="pragma" content="no-cache">
@@ -214,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024-04-26T00:14:34+00:00</p>
+      <p class="date">2024-04-26T08:05:04+00:00</p>
     </div>
   </div>
   
@@ -229,172 +250,240 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="https://www.inaturalist.org/projects/city-nature-challenge-2024-klagenfurt">inaturalist.org/projects/city-nature-challenge-2024-klagenfurt</a></li>
 </ul>
-<!--<small>Hinweis: Die Seite wird circa alle 12 Stunden mit neuen Daten befüllt. Nächstes Update um circa 2024-04-26 14:20:00.</small>-->
+<!--<small>Hinweis: Die Seite wird circa alle 12 Stunden mit neuen Daten befüllt. Nächstes Update um circa 2024-04-26 22:10:25.</small>-->
 <section id="allgemeine-information" class="level2">
 <h2 class="anchored" data-anchor-id="allgemeine-information">Allgemeine Information</h2>
-<p>Insgesamt wurden **** Beobachtungen von <strong>0</strong> Beobachterinnen und Beobachtern hochgeladen. Das ergibt einen Mittelwert von <strong>0</strong> Beobachtungen pro Beobachter bzw. Beobachterin und einen Median von <strong>0</strong>. Auf Spezies-Ebene wurden <strong>0</strong> Beobachtungen hochgeladen.</p>
+<p>Insgesamt wurden <strong>117</strong> Beobachtungen von <strong>4</strong> Beobachterinnen und Beobachtern hochgeladen. Das ergibt einen Mittelwert von <strong>29.2</strong> Beobachtungen pro Beobachter bzw. Beobachterin und einen Median von <strong>30.5</strong>. Auf Spezies-Ebene wurden <strong>84</strong> Beobachtungen hochgeladen.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div id="fig-histo" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-histo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="page_klagenfurt_files/figure-html/fig-histo-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1: Histogramm der Beobachtungen pro Beobachter/in
+</figcaption>
+</figure>
 </div>
 </div>
+</div>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div id="fig-time" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="page_klagenfurt_files/figure-html/fig-time-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;2: In welcher Stunde an welchen Wochentag wie viele Beobachtungen gemacht wurden
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="beobachtungskarte" class="level2">
 <h2 class="anchored" data-anchor-id="beobachtungskarte">Beobachtungskarte</h2>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-d339465a9f50e10a9062" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d339465a9f50e10a9062">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[47.59397,14.12456],6,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[46.6053559673,46.6053122024,46.6054061,46.6088437,46.6088608,46.6088055,46.6088608,46.6088608,46.6084141219,46.608848,46.6203705082,46.6084141219,46.6088437,46.6086847997,46.6086071367,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6084141219,46.6086847997,46.608747,46.6084141219,46.6087424997,46.6205582,46.6087424997,46.6087424997,46.62075864,46.6086847997,46.6087807997,46.62103358,46.62098325,46.6086815997,46.6086900997,46.6086900997,46.6087322997,46.6087322997,46.6088398997,46.62123347,46.62124689,46.6089428,46.6090463,46.6090475,46.6213118,46.6089375997,46.6089887997,46.6091083997,46.62134232,46.6091083997,46.6213557,46.6091551,46.62133765,46.6091594,46.62132785,46.609135,46.609135,46.6089325,46.6089325,46.6089325,46.6093407997,46.6090816,46.6090816,46.6090981997,46.6088826,46.6092895,46.62129854,46.6092901,46.6092901,46.6213287,46.6105144446,46.6092104,46.6092104],[14.2639080808,14.2639214918,14.2635747,14.2476485997,14.2476944,14.2476231997,14.2476944,14.2476944,14.2477685586,14.2476192,14.3371239462,14.2477685586,14.2476485997,14.2478592,14.2482459918,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2477685586,14.2478592,14.2477663,14.2477685586,14.2478125997,14.33617891,14.2478125997,14.2478125997,14.33677633,14.2478175997,14.247816,14.33738372,14.33742119,14.2478607997,14.2478715997,14.2478715997,14.2479438997,14.2479438997,14.2479712997,14.33774624,14.33778196,14.2477385,14.2477663997,14.2477666997,14.33802942,14.2477295997,14.2478528,14.2478718997,14.33829512,14.2478718997,14.33830632,14.2478736,14.33835038,14.2478481,14.33831297,14.2476832,14.2476832,14.2476447997,14.2476447997,14.2476447997,14.2477231997,14.2478175997,14.2478175997,14.2482436,14.2476956997,14.2476655997,14.33941563,14.2476655,14.2476655,14.33944715,14.2515897006,14.2476751,14.2476751],10,null,"Fr",{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2},{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["Birgit <br/> Turdus merula <br/> 2024-04-26 06:31:00 <br/> <a href='https://www.inaturalist.org/observations/209405175'>Beobachtung auf iNat<\/a>","Birgit <br/> Streptopelia decaocto <br/> 2024-04-26 06:31:00 <br/> <a href='https://www.inaturalist.org/observations/209405221'>Beobachtung auf iNat<\/a>","Birgit <br/> Passer domesticus <br/> 2024-04-26 06:34:07 <br/> <a href='https://www.inaturalist.org/observations/209405320'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Steatoda bipunctata <br/> 2024-04-26 08:45:12 <br/> <a href='https://www.inaturalist.org/observations/209428333'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Alinda biplicata <br/> 2024-04-26 08:47:12 <br/> <a href='https://www.inaturalist.org/observations/209428412'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Liocranum rupicola <br/> 2024-04-26 08:47:47 <br/> <a href='https://www.inaturalist.org/observations/209428485'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Arion <br/> 2024-04-26 08:46:58 <br/> <a href='https://www.inaturalist.org/observations/209428562'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Porcellio scaber <br/> 2024-04-26 08:46:49 <br/> <a href='https://www.inaturalist.org/observations/209428659'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Steatoda bipunctata <br/> 2024-04-26 08:56:08 <br/> <a href='https://www.inaturalist.org/observations/209430528'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Steatoda bipunctata <br/> 2024-04-26 08:57:54 <br/> <a href='https://www.inaturalist.org/observations/209430549'>Beobachtung auf iNat<\/a>","wolflutz <br/> Passer domesticus <br/> 2024-04-26 08:51:00 <br/> <a href='https://www.inaturalist.org/observations/209430663'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Steatoda bipunctata <br/> 2024-04-26 08:56:41 <br/> <a href='https://www.inaturalist.org/observations/209430725'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Ranunculus acris <br/> 2024-04-26 08:44:29 <br/> <a href='https://www.inaturalist.org/observations/209430829'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Lamium album <br/> 2024-04-26 08:44:14 <br/> <a href='https://www.inaturalist.org/observations/209430894'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Galanthus <br/> 2024-04-26 08:49:37 <br/> <a href='https://www.inaturalist.org/observations/209430944'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Prunus padus <br/> 2024-04-26 08:45:00 <br/> <a href='https://www.inaturalist.org/observations/209431059'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Rubus idaeus <br/> 2024-04-26 08:44:48 <br/> <a href='https://www.inaturalist.org/observations/209431130'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Galium aparine <br/> 2024-04-26 08:44:26 <br/> <a href='https://www.inaturalist.org/observations/209431192'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Cardamine bulbifera <br/> 2024-04-26 08:40:38 <br/> <a href='https://www.inaturalist.org/observations/209431277'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Leucojum vernum <br/> 2024-04-26 08:40:09 <br/> <a href='https://www.inaturalist.org/observations/209431418'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Chaerophyllum hirsutum <br/> 2024-04-26 08:39:38 <br/> <a href='https://www.inaturalist.org/observations/209431489'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Chrysosplenium alternifolium <br/> 2024-04-26 08:38:45 <br/> <a href='https://www.inaturalist.org/observations/209431597'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Urtica dioica <br/> 2024-04-26 08:37:55 <br/> <a href='https://www.inaturalist.org/observations/209431703'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Vinca minor <br/> 2024-04-26 08:37:27 <br/> <a href='https://www.inaturalist.org/observations/209431840'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Acer campestre <br/> 2024-04-26 08:36:42 <br/> <a href='https://www.inaturalist.org/observations/209432049'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Lamium galeobdolon <br/> 2024-04-26 08:36:28 <br/> <a href='https://www.inaturalist.org/observations/209432149'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Reynoutria japonica <br/> 2024-04-26 08:36:17 <br/> <a href='https://www.inaturalist.org/observations/209432225'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Acer pseudoplatanus <br/> 2024-04-26 08:35:52 <br/> <a href='https://www.inaturalist.org/observations/209432326'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Aesculus hippocastanum <br/> 2024-04-26 08:35:08 <br/> <a href='https://www.inaturalist.org/observations/209432487'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Salix caprea <br/> 2024-04-26 08:34:16 <br/> <a href='https://www.inaturalist.org/observations/209432836'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Carpinus betulus <br/> 2024-04-26 08:33:44 <br/> <a href='https://www.inaturalist.org/observations/209432931'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Quercus robur <br/> 2024-04-26 08:33:30 <br/> <a href='https://www.inaturalist.org/observations/209433018'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Corylus avellana <br/> 2024-04-26 08:32:43 <br/> <a href='https://www.inaturalist.org/observations/209433109'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Fagus sylvatica <br/> 2024-04-26 08:32:19 <br/> <a href='https://www.inaturalist.org/observations/209433221'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Dryopteris filix-mas <br/> 2024-04-26 08:31:48 <br/> <a href='https://www.inaturalist.org/observations/209433403'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Chelidonium majus <br/> 2024-04-26 08:30:38 <br/> <a href='https://www.inaturalist.org/observations/209433489'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Ranunculus acris <br/> 2024-04-26 08:29:55 <br/> <a href='https://www.inaturalist.org/observations/209433701'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Taraxacum officinale <br/> 2024-04-26 08:29:31 <br/> <a href='https://www.inaturalist.org/observations/209433808'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Fragaria vesca <br/> 2024-04-26 08:29:26 <br/> <a href='https://www.inaturalist.org/observations/209433921'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Taraxacum officinale <br/> 2024-04-26 08:29:11 <br/> <a href='https://www.inaturalist.org/observations/209434025'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Myosotis sylvatica <br/> 2024-04-26 08:28:54 <br/> <a href='https://www.inaturalist.org/observations/209434094'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Parmelia sulcata <br/> 2024-04-26 08:28:25 <br/> <a href='https://www.inaturalist.org/observations/209434234'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Hedera <br/> 2024-04-26 08:28:14 <br/> <a href='https://www.inaturalist.org/observations/209434358'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Tilia platyphyllos <br/> 2024-04-26 08:28:11 <br/> <a href='https://www.inaturalist.org/observations/209434478'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Fungi <br/> 2024-04-26 08:27:54 <br/> <a href='https://www.inaturalist.org/observations/209434822'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Asplenium trichomanes <br/> 2024-04-26 08:27:22 <br/> <a href='https://www.inaturalist.org/observations/209434919'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Encalypta streptocarpa <br/> 2024-04-26 08:27:16 <br/> <a href='https://www.inaturalist.org/observations/209435094'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Racomitrium heterostichum <br/> 2024-04-26 08:26:50 <br/> <a href='https://www.inaturalist.org/observations/209435180'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Cystopteris <br/> 2024-04-26 08:26:46 <br/> <a href='https://www.inaturalist.org/observations/209435274'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Cymbalaria muralis <br/> 2024-04-26 08:26:33 <br/> <a href='https://www.inaturalist.org/observations/209435416'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Allium ursinum <br/> 2024-04-26 08:26:10 <br/> <a href='https://www.inaturalist.org/observations/209435511'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Ajuga reptans <br/> 2024-04-26 08:25:51 <br/> <a href='https://www.inaturalist.org/observations/209435579'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Convallaria majalis <br/> 2024-04-26 08:25:17 <br/> <a href='https://www.inaturalist.org/observations/209435641'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Bellis perennis <br/> 2024-04-26 08:25:08 <br/> <a href='https://www.inaturalist.org/observations/209435727'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Alchemilla mollis <br/> 2024-04-26 08:24:37 <br/> <a href='https://www.inaturalist.org/observations/209435847'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Daucus carota <br/> 2024-04-26 08:44:00 <br/> <a href='https://www.inaturalist.org/observations/209436037'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Galium <br/> 2024-04-26 08:42:42 <br/> <a href='https://www.inaturalist.org/observations/209436604'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Sambucus nigra <br/> 2024-04-26 09:31:23 <br/> <a href='https://www.inaturalist.org/observations/209436852'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Plantago <br/> 2024-04-26 08:42:17 <br/> <a href='https://www.inaturalist.org/observations/209437148'>Beobachtung auf iNat<\/a>","wolflutz <br/> Alliaria petiolata <br/> 2024-04-26 09:35:41 <br/> <a href='https://www.inaturalist.org/observations/209437686'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Leucanthemum <br/> 2024-04-26 08:42:07 <br/> <a href='https://www.inaturalist.org/observations/209437901'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Silene latifolia <br/> 2024-04-26 08:41:24 <br/> <a href='https://www.inaturalist.org/observations/209438398'>Beobachtung auf iNat<\/a>","wolflutz <br/> Ranunculus bulbosus <br/> 2024-04-26 09:39:47 <br/> <a href='https://www.inaturalist.org/observations/209438441'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Potentilla indica <br/> 2024-04-26 08:41:08 <br/> <a href='https://www.inaturalist.org/observations/209438538'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Bombus <br/> 2024-04-26 08:39:07 <br/> <a href='https://www.inaturalist.org/observations/209438690'>Beobachtung auf iNat<\/a>","wolflutz <br/> Lamium album <br/> 2024-04-26 09:41:34 <br/> <a href='https://www.inaturalist.org/observations/209438871'>Beobachtung auf iNat<\/a>","wolflutz <br/> Anthriscus sylvestris <br/> 2024-04-26 09:42:20 <br/> <a href='https://www.inaturalist.org/observations/209439072'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Cota tinctoria <br/> 2024-04-26 08:37:20 <br/> <a href='https://www.inaturalist.org/observations/209439080'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Verbascum thapsus <br/> 2024-04-26 08:36:44 <br/> <a href='https://www.inaturalist.org/observations/209439245'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Digitalis purpurea <br/> 2024-04-26 08:36:32 <br/> <a href='https://www.inaturalist.org/observations/209439320'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Euphorbia lathyris <br/> 2024-04-26 08:33:52 <br/> <a href='https://www.inaturalist.org/observations/209439496'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Anthriscus cerefolium <br/> 2024-04-26 08:33:34 <br/> <a href='https://www.inaturalist.org/observations/209439583'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Rumex acetosa <br/> 2024-04-26 08:32:37 <br/> <a href='https://www.inaturalist.org/observations/209439977'>Beobachtung auf iNat<\/a>","wolflutz <br/> Galium mollugo <br/> 2024-04-26 09:48:40 <br/> <a href='https://www.inaturalist.org/observations/209440549'>Beobachtung auf iNat<\/a>","wolflutz <br/> Heracleum sphondylium <br/> 2024-04-26 09:49:13 <br/> <a href='https://www.inaturalist.org/observations/209440670'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Helleborus <br/> 2024-04-26 08:31:52 <br/> <a href='https://www.inaturalist.org/observations/209441255'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Cornus mas <br/> 2024-04-26 08:31:02 <br/> <a href='https://www.inaturalist.org/observations/209441407'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Galium odoratum <br/> 2024-04-26 08:30:32 <br/> <a href='https://www.inaturalist.org/observations/209441463'>Beobachtung auf iNat<\/a>","wolflutz <br/> NA <br/> 2024-04-26 09:50:39 <br/> <a href='https://www.inaturalist.org/observations/209441690'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Sonchus asper <br/> 2024-04-26 08:29:28 <br/> <a href='https://www.inaturalist.org/observations/209441871'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Plagiomnium <br/> 2024-04-26 08:28:43 <br/> <a href='https://www.inaturalist.org/observations/209442015'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Rubus idaeus <br/> 2024-04-26 08:26:56 <br/> <a href='https://www.inaturalist.org/observations/209442341'>Beobachtung auf iNat<\/a>","wolflutz <br/> Sambucus nigra <br/> 2024-04-26 09:55:56 <br/> <a href='https://www.inaturalist.org/observations/209442528'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Deutzia <br/> 2024-04-26 08:26:23 <br/> <a href='https://www.inaturalist.org/observations/209442542'>Beobachtung auf iNat<\/a>","wolflutz <br/> Fraxinus excelsior <br/> 2024-04-26 09:56:35 <br/> <a href='https://www.inaturalist.org/observations/209442674'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Helix pomatia <br/> 2024-04-26 08:26:08 <br/> <a href='https://www.inaturalist.org/observations/209442828'>Beobachtung auf iNat<\/a>","wolflutz <br/> Galium aparine <br/> 2024-04-26 09:57:16 <br/> <a href='https://www.inaturalist.org/observations/209442880'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Quercus <br/> 2024-04-26 08:24:34 <br/> <a href='https://www.inaturalist.org/observations/209442881'>Beobachtung auf iNat<\/a>","wolflutz <br/> Prunus padus <br/> 2024-04-26 09:57:58 <br/> <a href='https://www.inaturalist.org/observations/209443126'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Fungi <br/> 2024-04-26 08:23:22 <br/> <a href='https://www.inaturalist.org/observations/209443162'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Symphoricarpos albus <br/> 2024-04-26 08:22:42 <br/> <a href='https://www.inaturalist.org/observations/209443201'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Acer <br/> 2024-04-26 08:22:14 <br/> <a href='https://www.inaturalist.org/observations/209443338'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Anemonoides nemorosa <br/> 2024-04-26 08:22:02 <br/> <a href='https://www.inaturalist.org/observations/209443415'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Cerastium glomeratum <br/> 2024-04-26 08:21:37 <br/> <a href='https://www.inaturalist.org/observations/209443536'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Carpinus betulus <br/> 2024-04-26 08:20:32 <br/> <a href='https://www.inaturalist.org/observations/209443593'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Limonia nigropunctata <br/> 2024-04-26 08:19:23 <br/> <a href='https://www.inaturalist.org/observations/209444107'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Maianthemum canadense <br/> 2024-04-26 08:19:09 <br/> <a href='https://www.inaturalist.org/observations/209444225'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Limnophila <br/> 2024-04-26 08:17:49 <br/> <a href='https://www.inaturalist.org/observations/209444398'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Neottia ovata <br/> 2024-04-26 08:17:14 <br/> <a href='https://www.inaturalist.org/observations/209444506'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Convallaria majalis <br/> 2024-04-26 08:15:37 <br/> <a href='https://www.inaturalist.org/observations/209444597'>Beobachtung auf iNat<\/a>","wolflutz <br/> Ranunculus acris <br/> 2024-04-26 10:05:09 <br/> <a href='https://www.inaturalist.org/observations/209444762'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Vinca major <br/> 2024-04-26 08:15:15 <br/> <a href='https://www.inaturalist.org/observations/209444861'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Aphidoidea <br/> 2024-04-26 08:14:39 <br/> <a href='https://www.inaturalist.org/observations/209444943'>Beobachtung auf iNat<\/a>","wolflutz <br/> Euonymus europaeus <br/> 2024-04-26 10:05:57 <br/> <a href='https://www.inaturalist.org/observations/209444990'>Beobachtung auf iNat<\/a>","Peter Holub <br/> Typha latifolia <br/> 2024-04-26 09:50:02 <br/> <a href='https://www.inaturalist.org/observations/209445014'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Sambucus nigra <br/> 2024-04-26 08:13:29 <br/> <a href='https://www.inaturalist.org/observations/209445032'>Beobachtung auf iNat<\/a>","Sigrid Holub <br/> Aegopodium podagraria <br/> 2024-04-26 08:13:07 <br/> <a href='https://www.inaturalist.org/observations/209445107'>Beobachtung auf iNat<\/a>"],null,["Turdus merula","Streptopelia decaocto","Passer domesticus","Steatoda bipunctata","Alinda biplicata","Liocranum rupicola","Arion","Porcellio scaber","Steatoda bipunctata","Steatoda bipunctata","Passer domesticus","Steatoda bipunctata","Ranunculus acris","Lamium album","Galanthus","Prunus padus","Rubus idaeus","Galium aparine","Cardamine bulbifera","Leucojum vernum","Chaerophyllum hirsutum","Chrysosplenium alternifolium","Urtica dioica","Vinca minor","Acer campestre","Lamium galeobdolon","Reynoutria japonica","Acer pseudoplatanus","Aesculus hippocastanum","Salix caprea","Carpinus betulus","Quercus robur","Corylus avellana","Fagus sylvatica","Dryopteris filix-mas","Chelidonium majus","Ranunculus acris","Taraxacum officinale","Fragaria vesca","Taraxacum officinale","Myosotis sylvatica","Parmelia sulcata","Hedera","Tilia platyphyllos","Fungi","Asplenium trichomanes","Encalypta streptocarpa","Racomitrium heterostichum","Cystopteris","Cymbalaria muralis","Allium ursinum","Ajuga reptans","Convallaria majalis","Bellis perennis","Alchemilla mollis","Daucus carota","Galium","Sambucus nigra","Plantago","Alliaria petiolata","Leucanthemum","Silene latifolia","Ranunculus bulbosus","Potentilla indica","Bombus","Lamium album","Anthriscus sylvestris","Cota tinctoria","Verbascum thapsus","Digitalis purpurea","Euphorbia lathyris","Anthriscus cerefolium","Rumex acetosa","Galium mollugo","Heracleum sphondylium","Helleborus","Cornus mas","Galium odoratum",null,"Sonchus asper","Plagiomnium","Rubus idaeus","Sambucus nigra","Deutzia","Fraxinus excelsior","Helix pomatia","Galium aparine","Quercus","Prunus padus","Fungi","Symphoricarpos albus","Acer","Anemonoides nemorosa","Cerastium glomeratum","Carpinus betulus","Limonia nigropunctata","Maianthemum canadense","Limnophila","Neottia ovata","Convallaria majalis","Ranunculus acris","Vinca major","Aphidoidea","Euonymus europaeus","Typha latifolia","Sambucus nigra","Aegopodium podagraria"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["Mo","Di","Mi","Do","Fr","Sa","So"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[46.6053122024,46.6213557],"lng":[14.2476192,14.33944715]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
 <section id="fun-facts" class="level2">
 <h2 class="anchored" data-anchor-id="fun-facts">Fun Facts</h2>
-<p>User (auch bekannt als Birder) <strong>0</strong> hat 0 Vogelbeobachtungen hochgeladen - mehr als jede/r andere. Besonders liebt der User bzw. die Userin <strong>0</strong> die Art <em>0</em>, die er/sie bereits 0 Mal hochgeladen hat. Das Taxon mit dem längsten Namen ist <strong><em>0</em></strong>, das 0 Zeichen lang ist.</p>
+<p>User (auch bekannt als Birder) <strong>Peter Holub</strong> hat 8 Vogelbeobachtungen hochgeladen - mehr als jede/r andere. Besonders liebt der User bzw. die Userin <strong>Peter Holub</strong> die Art <em>Steatoda bipunctata</em>, die er/sie bereits 2 Mal hochgeladen hat. Das Taxon mit dem längsten Namen ist <strong><em>Coccothraustes coccothraustes</em></strong>, das 29 Zeichen lang ist.</p>
 </section>
 <section id="top-beobachterinnen" class="level2">
 <h2 class="anchored" data-anchor-id="top-beobachterinnen">Top Beobachter/innen</h2>
 <p>In dieser Liste werden auch doppelte Beobachtungen gezählt, jedoch sollte dies nicht als Tipp betrachtet werden, um an erster Stelle zu stehen.</p>
+<div class="cell">
 <div id="tbl-topObserver" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-topObserver-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;1: Beobachter/innen und deren Uploads geordnet nach Anzahl der Beobachtungen.
 </figcaption>
 <div aria-describedby="tbl-topObserver-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-fe85987b9bbd696d54b2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-fe85987b9bbd696d54b2">{"x":{"filter":"none","vertical":false,"data":[[53,47,14,3],["Peter Holub","Sigrid Holub","wolflutz","Birgit"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Beob. [#]<\/th>\n      <th>User<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"Beob. [#]","targets":0},{"name":"User","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="top-bestimmerinnen" class="level2">
 <h2 class="anchored" data-anchor-id="top-bestimmerinnen">Top Bestimmer/Innen</h2>
 <p>Die erhobenen Beobachtungen werden erst durch die unerschöpfliche Arbeit der Bestimmer/innen zu wertvollen Daten. An dieser Stelle ein großes Dankeschön an alle Bestimmer/innen ohne euch wäre iNaturalist nicht das, was es heute ist.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-dacf38a0014c9d6c955f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-dacf38a0014c9d6c955f">{"x":{"filter":"none","vertical":false,"data":[[2,2,1,1],["alex_iosipenko (Alexander Iosipenko)","pholub (Peter Holub)","tayloria (Stefan Gey)","urgamal (Urgamal Magsar)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Bestimmungen [#]<\/th>\n      <th>Bestimmer/In<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"Bestimmungen [#]","targets":0},{"name":"Bestimmer/In","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
 <section id="top-beobachterinnen-mit-den-meisten-unterschiedlichen-arten" class="level2">
 <h2 class="anchored" data-anchor-id="top-beobachterinnen-mit-den-meisten-unterschiedlichen-arten">Top Beobachter/innen mit den meisten unterschiedlichen Arten</h2>
 <p>Nur Beobachtungen zumindest auf Spezies-Ebene und Research-Grade werden gezählt.</p>
+<div class="cell">
 <div id="tbl-topObserverSpecies" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-topObserverSpecies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;2: Liste der Beobachter/Innen und Anzahl der unterschiedlichen Arten.
 </figcaption>
 <div aria-describedby="tbl-topObserverSpecies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-82d095c22b8d6eaf3966" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-82d095c22b8d6eaf3966">{"x":{"filter":"none","vertical":false,"data":[[2,2,2],["wolflutz","Peter Holub","Sigrid Holub"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Uniques [#]<\/th>\n      <th>User<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"Uniques [#]","targets":0},{"name":"User","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="top-taxa-spezies-ebene" class="level2">
 <h2 class="anchored" data-anchor-id="top-taxa-spezies-ebene">Top Taxa (Spezies-Ebene)</h2>
 <p>In dieser Liste sind die am häufigsten beobachteten Taxa auf Spezies-Ebene aufgeführt, die bereits identifiziert wurden. Es ist jedoch nicht erforderlich, dass diese von einer zweiten Person bestätigt wurden, um den Forschungsstandard (Research-Grade) zu erreichen.</p>
+<div class="cell">
 <div id="tbl-topTaxa" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-topTaxa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;3: Taxa mit Research-Grade auf Spezies-Ebene geordnet nach Anzahl der Beobachtungen.
 </figcaption>
 <div aria-describedby="tbl-topTaxa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cb54d211d90ba2bbce5f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cb54d211d90ba2bbce5f">{"x":{"filter":"none","vertical":false,"data":[[4,3,3,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],["Steatoda bipunctata","Ranunculus acris","Sambucus nigra","Carpinus betulus","Convallaria majalis","Galium aparine","Lamium album","Passer domesticus","Prunus padus","Rubus idaeus","Taraxacum officinale","Acer campestre","Acer pseudoplatanus","Aegithalos caudatus","Aegopodium podagraria","Aesculus hippocastanum","Ajuga reptans","Alchemilla mollis","Alinda biplicata","Alliaria petiolata","Allium ursinum","Anemonoides nemorosa","Anthriscus cerefolium","Anthriscus sylvestris","Asplenium trichomanes","Bellis perennis","Cardamine bulbifera","Cerastium glomeratum","Chaerophyllum hirsutum","Chelidonium majus","Chrysosplenium alternifolium","Coccothraustes coccothraustes","Columba palumbus","Cornus mas","Corylus avellana","Cota tinctoria","Cyanistes caeruleus","Cymbalaria muralis","Daucus carota","Digitalis purpurea","Dryopteris filix-mas","Encalypta streptocarpa","Euonymus europaeus","Euphorbia lathyris","Fagus sylvatica","Fragaria vesca","Fraxinus excelsior","Galium mollugo","Galium odoratum","Helix pomatia","Heracleum sphondylium","Lamium galeobdolon","Leucojum vernum","Limonia nigropunctata","Liocranum rupicola","Maianthemum canadense","Muscicapa striata","Myosotis sylvatica","Neottia ovata","Parmelia sulcata","Parus major","Phylloscopus collybita","Porcellio scaber","Potentilla indica","Quercus robur","Racomitrium heterostichum","Ranunculus bulbosus","Reynoutria japonica","Rumex acetosa","Salix caprea","Silene latifolia","Sonchus asper","Streptopelia decaocto","Sylvia atricapilla","Symphoricarpos albus","Tilia platyphyllos","Troglodytes troglodytes","Turdus merula","Turdus philomelos","Typha latifolia","Urtica dioica","Verbascum thapsus","Vinca major","Vinca minor"],["Fettspinne","Scharfer Hahnenfuß","Schwarzer Holunder","Hainbuche","Maiglöckchen","Kletten-Labkraut","Weiße Taubnessel","Haussperling, Spatz, Hausspatz, ...","Traubenkirsche, Gewöhnliche Trau...","Himbeere, Echte Himbeere","Löwenzahn, Butterblume, Kuhblume","Feldahorn, Feld-Ahorn","Bergahorn, Berg-Ahorn","Schwanzmeise","Giersch, Geißfuß, Gewöhnlicher G...","Gewöhnliche Rosskastanie, Gemein...","Kriechender Günsel","Weicher Frauenmantel","Gemeine Schließmundschnecke","Knoblauchsrauke","Bärlauch","Buschwindröschen","Echter Kerbel","Wiesen-Kerbel","Dunkelstieliger Streifenfarn, Br...","Gänseblümchen","Zwiebel-Zahnwurz, Knöllchentrage...","Knäuel-Hornkraut","Behaarter Kälberkropf, Rauhaarig...","Schöllkraut","Wechselblättriges Milzkraut","Kernbeißer, Kirschkernbeißer, Ki...","Ringeltaube, Waldtaube","Kornelkirsche, Herlitze, Gelber ...","Gemeine Hasel, Haselnussstrauch,...","Färberkamille, Färber-Hundskamille","Blaumeise","Mauer-Zimbelkraut, Zymbelkraut","Wilde Möhre, Möhre, Rüebli","Roter Fingerhut","Gemeiner Wurmfarn, Gewöhnlicher ...","Gedrehtfrüchtiger Glockenhut","Pfaffenhütchen, Gewöhnlicher Spi...","Kreuzblättrige Wolfsmilch","Rotbuche, Blutbuche","Wald-Erdbeere, Monatserdbeere, W...","Gemeine Esche, Gewöhnliche Esche...","Wiesen-Labkraut, Kleinblütiges W...","Waldmeister","Weinbergschnecke","Wiesen-Bärenklau, Gemeiner Bären...","Gewöhnliche Goldnessel, Gold-Tau...","Märzenbecher, Frühlings-Knotenblume",null,"Bunter Felsenstreuner","Kanadisches Schattenblümchen","Grauschnäpper, Grauer Fliegensch...","Wald-Vergissmeinnicht","Großes Zweiblatt","Furchen-Schüsselflechte","Kohlmeise, Brandmeise, Schwarzme...","Zilpzalp, Weidenlaubsänger","Kellerassel","Indische Scheinerdbeere, Scheine...","Stieleiche, Sommereiche, Deutsch...","Ungleichästiges Zackenmützenmoos","Knolliger Hahnenfuß","Kamtschatka-Knöterich, Japanknöt...","Wiesen-Sauerampfer","Sal-Weide, Saalweide","Weiße Lichtnelke, Weisse Waldnelke","Raue Gänsedistel","Türkentaube","Mönchsgrasmücke","Schneebeere, Knallerbsenstrauch","Sommerlinde, Großblättrige Linde","Zaunkönig","Amsel, Schwarzdrossel","Singdrossel","Großer Rohrkolben, Breitblättrig...","Große Brennessel, Große Brennnessel","Kleinblütige Königskerze","Großes Wintergrün","Kleines Immergrün"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Beob. [#]<\/th>\n      <th>Wiss. Name<\/th>\n      <th>Umgangspr. Name<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"Beob. [#]","targets":0},{"name":"Wiss. Name","targets":1},{"name":"Umgangspr. Name","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="unique-taxa-mit-research-grade" class="level2">
 <h2 class="anchored" data-anchor-id="unique-taxa-mit-research-grade">Unique Taxa mit Research-Grade</h2>
 <p>Besonders erfreulich sind natürlich immer einzigartige Funde, die nur von einer Person in der Challenge hochgeladen wurden. In dieser Liste müssen jedoch alle Spezies von einer zweiten Person bestätigt werden, um den Forschungsstandard (Research-Grade) zu erreichen.</p>
+<div class="cell">
 <div id="tbl-uniqueTaxa" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-uniqueTaxa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;4: Einmalige Taxa mit Research-Grade auf Spezies-Ebene inklusive Angabe des Users.
 </figcaption>
 <div aria-describedby="tbl-uniqueTaxa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7797c82dd0039abdfcbd" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7797c82dd0039abdfcbd">{"x":{"filter":"none","vertical":false,"data":[["Sylvia atricapilla","Turdus philomelos","Encalypta streptocarpa","Allium ursinum","Lamium album","Anthriscus sylvestris"],["Mönchsgrasmücke","Singdrossel","Gedrehtfrüchtiger Glockenhut","Bärlauch","Weiße Taubnessel","Wiesen-Kerbel"],["Sigrid Holub","Sigrid Holub","Peter Holub","Peter Holub","wolflutz","wolflutz"],["<a href='https://www.inaturalist.org/observations/209408427'>209408427<\/a>","<a href='https://www.inaturalist.org/observations/209409738'>209409738<\/a>","<a href='https://www.inaturalist.org/observations/209435094'>209435094<\/a>","<a href='https://www.inaturalist.org/observations/209435511'>209435511<\/a>","<a href='https://www.inaturalist.org/observations/209438871'>209438871<\/a>","<a href='https://www.inaturalist.org/observations/209439072'>209439072<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Wiss. Name<\/th>\n      <th>Umgangspr. Name<\/th>\n      <th>User<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"type":"html","targets":3},{"name":"Wiss. Name","targets":0},{"name":"Umgangspr. Name","targets":1},{"name":"User","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="beobachtungs-qualität" class="level2">
 <h2 class="anchored" data-anchor-id="beobachtungs-qualität">Beobachtungs Qualität</h2>
 <p>iNaturalist unterteilt die Beobachtungsqualität in drei Kategorien. Die Kategorie “causal” umfasst Beobachtungen, bei denen mindestens eines der folgenden Elemente fehlt: das Datum der Beobachtung, der Beobachtungsort oder ein Foto (oder Tonaufnahme). Die Kategorie “needs_id” wird angezeigt, bis mindestens zwei Personen eine Spezies für diesen Upload einstimmig bestimmt haben, ohne Widerspruch. Die letzte und wertvollste Kategorie ist “research”, die bestätigte Beobachtungen auf Spezies-Ebene umfasst.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div id="fig-Quality" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Quality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="page_klagenfurt_files/figure-html/fig-Quality-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Quality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;3: Verteilung der Beobachtungsqualität auf iNaturalist
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="beobachtungen-phylum" class="level2">
 <h2 class="anchored" data-anchor-id="beobachtungen-phylum">Beobachtungen Phylum</h2>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div id="fig-Phylum" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Phylum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="page_klagenfurt_files/figure-html/fig-Phylum-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Phylum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4: Relative und absolute Anzahl der Beobachtungen pro Phylum
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="insecta---ordnungen" class="level2">
 <h2 class="anchored" data-anchor-id="insecta---ordnungen">Insecta - Ordnungen</h2>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div id="fig-Insecta" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Insecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="page_klagenfurt_files/figure-html/fig-Insecta-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Insecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;5: Ordnungen innerhalb der Klasse Insecta und deren relative und absolute Anzahl an Beobachtungen.
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="beobachtungen-mit-konflikt-bestimmungen" class="level2">
 <h2 class="anchored" data-anchor-id="beobachtungen-mit-konflikt-bestimmungen">Beobachtungen mit Konflikt Bestimmungen</h2>
+<div class="cell">
 <div id="tbl-Conflict" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Conflict-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;5: Beobachtungen wo User unterschiedlicher Meinung zum beobachteten Taxon sind.
 </figcaption>
 <div aria-describedby="tbl-Conflict-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ebd8bbb8aba5f9bf7fd6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ebd8bbb8aba5f9bf7fd6">{"x":{"filter":"none","vertical":false,"data":[[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Link<\/th>\n      <th>User<\/th>\n      <th>Taxa<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"type":"html","targets":1},{"name":"Link","targets":0},{"name":"User","targets":1},{"name":"Taxa","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="rote-liste" class="level2">
 <h2 class="anchored" data-anchor-id="rote-liste">Rote Liste</h2>
 <p><em>Anmerkung: Keine Ahnung wie aktuell meine Rote Liste ist.</em></p>
+<div class="cell">
 <div id="tbl-CheckList" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-CheckList-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;6: Beobachtungen die zumindest in einem EU Land auf der Roten Liste stehen inklusive Anzahl der Beobachtungen.
 </figcaption>
 <div aria-describedby="tbl-CheckList-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-006ff70510e7e5904165" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-006ff70510e7e5904165">{"x":{"filter":"none","vertical":false,"data":[[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Wiss. Name<\/th>\n      <th>Umgangspr. Name<\/th>\n      <th>annex_II_priority<\/th>\n      <th>annex_II<\/th>\n      <th>annex_IV<\/th>\n      <th>Beob. (#)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":5},{"name":"Wiss. Name","targets":0},{"name":"Umgangspr. Name","targets":1},{"name":"annex_II_priority","targets":2},{"name":"annex_II","targets":3},{"name":"annex_IV","targets":4},{"name":"Beob. (#)","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
 </div>
+</div>
+<div class="cell">
 <div id="tbl-BirdsList" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-BirdsList-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabelle&nbsp;7: Vogel Beobachtungen die zumindest in einem EU Land auf der Roten Liste AnnexI stehen inklusive Anzahl der Beobachtungen.
 </figcaption>
 <div aria-describedby="tbl-BirdsList-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Noch keine Beobachtungen"</code></pre>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-fac1c885b71166a16a21" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-fac1c885b71166a16a21">{"x":{"filter":"none","vertical":false,"data":[["Aegithalos caudatus","Coccothraustes coccothraustes","Columba palumbus","Cyanistes caeruleus","Muscicapa striata","Parus major","Passer domesticus","Phylloscopus collybita","Streptopelia decaocto","Sylvia atricapilla","Troglodytes troglodytes","Turdus merula","Turdus philomelos"],["Schwanzmeise","Kernbeißer, Kirschkernbeißer, Ki...","Ringeltaube, Waldtaube","Blaumeise","Grauschnäpper, Grauer Fliegensch...","Kohlmeise, Brandmeise, Schwarzme...","Haussperling, Spatz, Hausspatz, ...","Zilpzalp, Weidenlaubsänger","Türkentaube","Mönchsgrasmücke","Zaunkönig","Amsel, Schwarzdrossel","Singdrossel"],["","","I *","","","","","","","","I *","",""],[1,1,1,1,1,1,2,1,1,1,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Wiss. Name<\/th>\n      <th>Umgangspr. Name<\/th>\n      <th>AnnexI<\/th>\n      <th>Beob. (#)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":3},{"name":"Wiss. Name","targets":0},{"name":"Umgangspr. Name","targets":1},{"name":"AnnexI","targets":2},{"name":"Beob. (#)","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
+</div>
 </div>
 
 
