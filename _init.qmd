@@ -76,7 +76,7 @@ fetchTxt <- function(url){
   return(base::url(url, headers = c(Accept = "application/json, text/*, */*", "User-Agent" = "inat-austria-city-challenge-2024")))
 }
 
-loadObs <- function(projectId, maxLoops = 500){
+loadObs <- function(projectId, maxLoops = 1000){
    tryCatch(
      exp = {
       checkIfFileExists <- file.exists(glue("data/obs_{projectId}.csv"))
