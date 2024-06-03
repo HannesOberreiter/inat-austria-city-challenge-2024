@@ -16,6 +16,14 @@ date-format: "YYYY-MM-DDTHH:mm:ssZ"
 - [https://www.citynaturechallenge.at/](https://www.citynaturechallenge.at/)
 - [inaturalist.org/projects/city-nature-challenges-in-oesterreich-2024](https://www.inaturalist.org/projects/city-nature-challenges-in-oesterreich-2024)
 
+
+<i style="color: red;">
+  Anmerkung: Die Region Salzburg CNC wird von uns nicht ausgewertet, diese finden sie auf observation.org unter:
+  <a href="https://observation.org/bioblitz/salzburg-cnc-2024/">
+    Salzburg CNC 2024
+  </a>
+</i>
+
 {{< include _init.qmd >}}
 
 ```{r init}
@@ -55,6 +63,8 @@ if(!is.null(obsResults)){
   print('Noch keine Beobachtungen')
 }
 ```
+
+
 
 ## Indizes zwischen den Regionen
 

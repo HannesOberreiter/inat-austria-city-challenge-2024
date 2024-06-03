@@ -43,6 +43,8 @@ website:
             text: "Vorarlberg"
           - file: page_elsbeere.qmd
             text: "Elsbeere Wienerwald"
+          - href: https://observation.org/bioblitz/salzburg-cnc-2024/
+            text: "Salzburg 🔗"
       - text: "Nationalparks"
         menu:
           - file: page_nationalpark_gesaeuse.qmd
